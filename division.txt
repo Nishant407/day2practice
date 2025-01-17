@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class DivisionThreeNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input three numbers
+        System.out.print("Enter the first number: ");
+        double num1 = scanner.nextDouble();
+
+        System.out.print("Enter the second number: ");
+        double num2 = scanner.nextDouble();
+
+        System.out.print("Enter the third number: ");
+        double num3 = scanner.nextDouble();
+
+        // Perform division
+        if (num2 != 0 && num3 != 0) {
+            double result = num1 / num2 / num3;
+            System.out.println("The result of dividing the three numbers is: " + result);
+        } else {
+            System.out.println("Division by zero is not allowed.");
+        }
+
+        scanner.close();
+    }
+}

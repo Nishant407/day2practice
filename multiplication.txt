@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Multiplication {
+    public static void main(String[] args) {
+        // Create a Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
+
+        // Initialize variables for multiplication
+        int product = 1; // Start with 1 as it's the identity for multiplication
+
+        // Prompt the user to enter three numbers
+        System.out.println("Enter three numbers:");
+
+        // Use a for loop to take input and calculate the product
+        for (int i = 1; i <= 3; i++) {
+            System.out.print("Enter number " + i + ": ");
+            int num = scanner.nextInt();
+            product *= num; // Multiply the current number with the product
+        }
+
+        // Display the result
+        System.out.println("The product of the three numbers is: " + product);
+
+        // Close the scanner
+        scanner.close();
+    }
+}
